@@ -6,6 +6,14 @@ body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
+/*Nav Bar*/
+ul{
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+
+}
+
 /* Typography */
 
 /* Links & Accents */
@@ -13,12 +21,62 @@ body {
 /* Images */
 
 /* Hero Section */
+#hero-container {
+  max-width: 1150px;
+  margin: 0 auto; /* centers the container horizontally */
+
+}
+
+.hero-img {
+  width: 100%; /*width of the image in container*/
+  height: 600px;
+  object-fit: cover;
+  border: 4px solid #679e6f; /*thickness and color of the border around the image */
+  border-radius: 6px; /*roundnedness of corners */
+  padding: 10px; /*space between the image and the border */
+}
 
 /* Main Content */
+main {
+  padding: 60px 0;
+}
 
+section {
+  padding: 60px 0;
+  max-width: 800px;
+  margin: 0 auto; /* centers the container horizontally */
+}
 /* About Section */
+.about-us {
+  border-bottom: 4px solid #c8d49c; /*thickness and color of the border around the image */ 
+  padding-bottom: 80px; /*space between the image and the border */
+}
 
 /* Specials Section */
+.specials { 
+  max-width: 1150px;
+  padding: 60px 0;
+}
+
+.specials-list { /*divider for the individual specials*/
+  display: flex; /*turns the contents in a grid*/
+  gap: 20px; /*adds space in between the pictures(specials list items)*/
+  justify-content: center; /*centers the contents in the grid*/
+  flex-wrap: wrap;  
+  margin: 0 auto; 
+}
+
+.special-offer {
+   flex: 1 1 250px; /*flex-grow, flex-shrink, flex-basis*/
+   max-width: 400px; /*sets the maximum width of the special offer item*/
+   background-color: #f5f5dc;
+   border-radius: 8px;
+   padding: 24px;
+   text-align: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*adds a subtle shadow effect to the special offer item*/
+}
+
+
 
 /* Visit Us Section */
 
